@@ -1,0 +1,3 @@
+Jose Angel: Requerimienos funcionales
+Kiko: Requerimentos no funcionales
+Sergio:Casos de uso
