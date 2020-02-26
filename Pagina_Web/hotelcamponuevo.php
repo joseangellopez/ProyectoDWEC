@@ -14,8 +14,12 @@ include 'links.php';
 include 'cabecera.php';
 ?>
 <div class="container">
-<table class="table table-bordered">
- 
+
+<!--Empieza numero de plantas del hotel-->
+<div class="card" style="width: 35rem;">
+  <div class="card-body">
+
+  <table class="table table-bordered"> 
   <tbody>
     <tr>
       <td id ="1-1" scope="row" >1</td>
@@ -54,6 +58,9 @@ include 'cabecera.php';
   </tbody>
 </table>
 
+  </div>
+</div>
+<!--FIN numero de plantas del hotel-->
 
 
 
