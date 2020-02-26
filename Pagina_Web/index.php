@@ -68,7 +68,7 @@ include 'cabecera.php';
         <div class="card-body">
           <h5 class="card-title text-center">HOTEX</h5>
           <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="holtelcamponuevo.php" class="btn btn-primary ">Disponible</a>
+          <a href="hotelcamponuevo.php" class="btn btn-primary ">Disponible</a>
         </div>
       </div>
       <div class="card p-3" style="width: 18rem;">
