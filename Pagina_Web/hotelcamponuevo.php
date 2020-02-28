@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
     $contador = 0;
-$habi = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    $habi = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
     include 'links.php';
     include 'conexionbd.php';
     $consulta_color = "select * from habitacion;";
@@ -19,7 +19,7 @@ $habi = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10
                     $habi[$contador] = "rojo";
                 } else if ($prueba2 == "NO") {
 
-                    $habi[$contador] = "azul";
+                    $habi[$contador] = "verde";
                 }
 
             }
@@ -36,13 +36,45 @@ $habi = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10
 <?php
 include 'cabecera.php';
 ?>
+<br>
 <div class="container">
 
+<!--CARROUSER HOTEL CAMPO NUEVO-->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/hotel1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/hotel2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/hotel3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- FIN CARROUSER HOTEL CAMPO NUEVO-->
     <!--Empieza numero de plantas del hotel-->
+<div class="row">
+
     <div class="card" style="width: 35rem;">
         <div class="card-body">
+        <h5 class="card-title">Habitaciones: Hotel Campo Nuevo</h5>
+
             <table class="table table-bordered table1">
-                <caption>Planta1</caption>
+                <caption>Planta 1</caption>
 
                 <tbody>
                 <tr>
@@ -82,7 +114,7 @@ include 'cabecera.php';
                 </tbody>
             </table>
             <table class="table table-bordered table2">
-                <caption>Planta2</caption>
+                <caption>Planta 2</caption>
 
                 <tbody>
                 <tr>
@@ -121,8 +153,8 @@ include 'cabecera.php';
                 </tr>
                 </tbody>
             </table>
-            <table class="table table-bordered table3">
-                <caption>Planta3</caption>
+            <table class="table table-bordered table3 ">
+                <caption>Planta 3</caption>
 
                 <tbody>
                 <tr>
@@ -162,7 +194,7 @@ include 'cabecera.php';
                 </tbody>
             </table>
             <table class="table table-bordered table4">
-                <caption>Planta4</caption>
+                <caption>Planta 4</caption>
 
                 <tbody>
                 <tr>
@@ -201,17 +233,22 @@ include 'cabecera.php';
                 </tr>
                 </tbody>
             </table>
+                    
+            <button id="1" class="btn btn-outline-primary">Planta 1</button>
+            <button id="2" class="btn btn-outline-primary">Planta 2</button>
+            <button id="3" class="btn btn-outline-primary">Planta 3</button>
+            <button id="4" class="btn btn-outline-primary">Planta 4</button>
         </div>
     </div>
     <!--FIN numero de plantas del hotel-->
 
-
-    <button id="1">Planta1</button>
-    <button id="2">Planta2</button>
-    <button id="3">Planta3</button>
-    <button id="4">Planta4</button>
-
-
+ <div class="card" style="width: 35rem;">
+    <div class="card-body">
+    <p>Fecha de entrada:<input id="date" type="date" value="2020-15-02"></p>
+    <p>Fecha de  Salida:  <input id="date" type="date" value="2020-15-02"></p>
+        </div>
+    </div>
+</div>
     <?php
     include 'pie.php';
     ?>

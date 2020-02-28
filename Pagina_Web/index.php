@@ -7,7 +7,7 @@
 include 'links.php';
 ?>
 
-    <title>Document</title>
+    <title>Aplicación Hotelera</title>
 </head>
 <body>
 <?php 
@@ -27,24 +27,15 @@ include 'cabecera.php';
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://static.vecteezy.com/system/resources/previews/000/358/274/non_2x/vector-hotel-online-booking-banner.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+       
       </div>
       <div class="carousel-item">
         <img src="https://chandanai.com/wp-content/uploads/2019/01/hotelbook.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+      
       </div>
       <div class="carousel-item">
         <img src="https://images.squarespace-cdn.com/content/v1/5808ca8b2e69cff7baf46b68/1490058441933-BVAH59USJ4XQ4IFLJP8Q/ke17ZwdGBToddI8pDm48kG1VonStXBMhI7VIcWhi9y1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKhY-fNmZN6-qcnAg_zlUgRugyKzCpaJ1F813YUpvg0cKMshLAGzx4R3EDFOm1kBS/banner-hotelrooms-eq.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
+        
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
