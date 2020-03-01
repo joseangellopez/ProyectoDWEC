@@ -14,7 +14,7 @@
 								nombre='$n',
 								apellido1='$a1',
 								apellido2='$a2'
-				where id='$id'";
+				where codCliente='$codCliente'";
 	echo $result=mysqli_query($conexion,$sql);
 
  ?>
