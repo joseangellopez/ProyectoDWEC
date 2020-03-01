@@ -47,7 +47,7 @@ ALTER TABLE `cliente`
   ADD PRIMARY KEY (`codCliente`);
 
 ALTER TABLE `habitacion`
-  ADD PRIMARY KEY (`codHabitacion`),
+  ADD PRIMARY KEY (`codHabitacion`,`planta`),
    ADD KEY `planta` (`planta`);
 
 ALTER TABLE `login`
