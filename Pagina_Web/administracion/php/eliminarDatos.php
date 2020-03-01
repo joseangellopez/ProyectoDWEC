@@ -2,8 +2,8 @@
 <?php 
 	require_once "conexion.php";
 	$conexion=conexion();
-	$id=$_POST['id'];
+	$codCliente=$_POST['codCliente'];
 
-	$sql="DELETE from cliente where id='$id'";
+	$sql="DELETE from cliente where codCliente='$codCliente'";
 	echo $result=mysqli_query($conexion,$sql);
  ?>
