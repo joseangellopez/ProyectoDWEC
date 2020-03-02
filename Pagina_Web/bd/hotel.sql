@@ -31,7 +31,7 @@ CREATE TABLE `habitacion` (
 
 CREATE TABLE `login` (
   `usuario` varchar(25) COLLATE utf8_bin NOT NULL,
-  `clave` varchar(25) COLLATE utf8_bin NOT NULL,
+  `clave` varchar(100) COLLATE utf8_bin NOT NULL,
   `rol` varchar(25) COLLATE utf8_bin NOT NULL,
   `codCliente` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
