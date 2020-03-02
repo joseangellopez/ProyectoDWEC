@@ -24,7 +24,9 @@ CREATE TABLE `habitacion` (
   `capacidad` int(11) NOT NULL,
   `planta` int(1) NOT NULL,
   `tarifa` double NOT NULL,
-  `reservada` varchar(2) COLLATE utf8_bin NOT NULL
+  `reservada` varchar(2) COLLATE utf8_bin NOT NULL,
+  `Fecha_entrada` date NOT NULL,
+  `Fecha_salida` date NOT NULL
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
