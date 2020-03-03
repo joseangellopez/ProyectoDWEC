@@ -58,27 +58,30 @@ include 'cabecera.php';
         <img src="https://www.ahstatic.com/photos/1867_ho_00_p_1024x768.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">HOTEX</h5>
-          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text text-center">HOTEX es el lugar perfecto si estas cansado de los mismos sitio de siempre, cuenta con una gran intimidad, muchas actividades y una gran piscina.</p> <p class="card-text text-center">VEN Y DESCRÚBRETE A TI MISMO</p>
           <a href="hotelcamponuevo.php" class="btn btn-primary ">Disponible</a>
         </div>
       </div>
       <div class="card p-3" style="width: 18rem;">
         <img src="https://ihg.scene7.com/is/image/ihg/avid-hotels-perry-5980510467-4x3" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">HOTEX</h5>
-          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger ">No disponible</a>
+          <h5 class="card-title text-center">Los piripis</h5>
+          <p class="card-text text-center">¿Cansado que tu hotel no tenga todos los servicios?</p>
+          <p class="card-text text-center">¿Cansado de esperar largos periodos de tiempo para entrar en tu habitación?</p>
+          <p class="card-text text-center">No busques mas, este es el hotel perfecto para ti con los mejores servicios</p>
+          <a href="#" class="btn btn-danger">No disponible</a>
         </div>
       </div>
       <div class="card p-3" style="width: 18rem;">
         <img src="https://y.cdrst.com/foto/hotel-sf/e65d/hotelgallery/hotel-tryp-lisboa-caparica-mar-exterior-6bd965b.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">HOTEX</h5>
-          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title text-center">ANGELUS</h5>
+          <p class="card-text text-center">En este hotel podrás escuchar la llamada de Dios a todas horas del día y en todos los lugares</p>
+          <p class="card-text text-center">Nuestro objetivo es que te sientes como en la sagrada casa de Dios</p>
+          <p class="card-text text-center">SIEMPRE DISPONIBLE</p>
           <a href="#" class="btn btn-danger ">No disponible</a>
         </div>
       </div>
-</div>
 </div>
 </div>
 <!--FIN TARJETAS HOTEL-->
