@@ -8,35 +8,40 @@
 <div class="row">
 	<div class="col-sm-12">
 	<h2>Administración de hoteles</h2>
-		<table class="table table-hover table-condensed table-bordered">
 		<caption>
 			<button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
 				Agregar nuevo Cliente
-				<span class="glyphicon glyphicon-plus"></span>
+				<span class="glyphicon glyphicon-plus"></span> <i class="material-icons">face</i>
 			</button>
 		</caption>
+	<div class="table-responsive">        
+		<table id="tablaPersonas" class="table table-striped table-bordered table-condensed" style="width:100%">
+		<thead class="text-center">
 			<tr>
 				<td>Código Cliente</td>
 				<td>Dni</td>
 				<td>Nombre</td>
-				<td>Primer Apellido</td>
-				<td>Segundo Apellido</td>
+				<td>Apellidos</td>
+				<td>Telefono</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
 			</tr>
+			</thead>
+			<tbody>
+
 			<?php 
 
 				if(isset($_SESSION['consulta'])){
 					if($_SESSION['consulta'] > 0){
 						$idp=$_SESSION['consulta'];
-						$sql="SELECT codCliente,DNI,nombre,apellido1,apellido2
-						from cliente where id='$idp'";
+						$sql="SELECT codCliente,DNI,nombre,apellidos,telefono
+						from cliente where codCliente='$idp'";
 					}else{
-						$sql="SELECT codCliente,DNI,nombre,apellido1,apellido2
+						$sql="SELECT codCliente,DNI,nombre,apellidos,telefono
 						from cliente";
 					}
 				}else{
-					$sql="SELECT codCliente,DNI,nombre,apellido1,apellido2
+					$sql="SELECT codCliente,DNI,nombre,apellidos,telefono
 						from cliente";
 				}
 
@@ -60,19 +65,20 @@
 
 				<td>
 					<button class="btn btn-warning glyphicon glyphicon-pencil" data-toggle="modal" data-target="#modalEdicion" onclick="agregaform('<?php echo $datos ?>')">
-						
+					<i class="material-icons">edit</i>
 					</button>
 				</td>
 				<td>
 					<button class="btn btn-danger glyphicon glyphicon-remove" 
 					onclick="preguntarSiNo('<?php echo $ver[0] ?>')">
-						
+					<i class="material-icons">delete</i>
 					</button>
 				</td>
 			</tr>
 			<?php 
 		}
 			 ?>
+			</tbody>        
 		</table>
 	</div>
 </div>

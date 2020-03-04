@@ -2,7 +2,7 @@
 	require_once "../php/conexion.php";
 	$conexion=conexion();
 
-	$sql="SELECT codCliente,DNI,apellido1,apellido2,telefono 
+	$sql="SELECT codCliente,dni,nombre,apellidos,telefono 
 						from cliente";
 				$result=mysqli_query($conexion,$sql);
 
@@ -13,7 +13,7 @@
 	<div class="col-sm-4">
 		<label>Buscador</label>
 		<select id="buscadorvivo" class="form-control input-sm">
-			<option value="0">Seleciona uno</option>
+			<option value="0">Buscar Cliente</option>
 			<?php
 				while($ver=mysqli_fetch_row($result)): 
 			 ?>
