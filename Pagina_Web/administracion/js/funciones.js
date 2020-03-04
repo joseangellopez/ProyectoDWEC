@@ -1,6 +1,6 @@
 
 
-function agregardatos(codCliente,DNI,nombre,apellido1,apellido2){
+function agregardatos(codCliente,dni,nombre,apellido1,apellido2){
 
 	cadena="codCliente=" + codCliente + 
 			"&DNI=" + dni +
@@ -44,8 +44,8 @@ function actualizaDatos(){
 	apellido1=$('#apellido1').val();
 	apellido2=$('#apellido2').val();
 
-	cadena="codCliente=" + codCliente + 
-	"&DNI=" + dni +
+	cadena=
+	"DNI=" + dni +
 	"&nombre=" + nombre +
 	"&apellido1=" + apellido1 +
 	"&apellido2=" + apellido2;
