@@ -10,7 +10,7 @@ include 'links.php';
     <title>Aplicación Hotelera</title>
 </head>
 <body>
-<?php 
+<?php
 include 'cabecera.php';
 ?>
 

@@ -16,9 +16,19 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
-        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModallogin">Login</button></li>
-       <li> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalregistro">Registro</button></li>'
-        <li> <a href="logout.php"> <button type="button" class="btn btn-primary">Logout</button></a></li>
+          <?php
+          session_start();
+
+          $login_logout = "";
+          if (!isset($_SESSION['sess_user_name'])) {
+              $login_logout = '<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModallogin">Login</button></li>
+       <li> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalregistro">Registro</button></li>';
+          }else {
+              $login_logout =  '<li> <a href="logout.php"> <button type="button" class="btn btn-primary">Logout</button></a></li>';
+          }
+          echo $login_logout
+          ?>
+
       </ul>
     </div>
     
