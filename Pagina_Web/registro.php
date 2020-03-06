@@ -41,6 +41,7 @@
                     
                     <input id="myPassword" class="form-control" type="password" id="contrasena_registro" name="contrasena_registro"
                            placeholder="Contraseña" required>
+                    <br>
                     <input class="form-control" type="password" id="contrasena_registro2" name="contrasena_registro2"
                            placeholder="Repite Contraseña" required>
                     <div class="checkbox">
@@ -50,7 +51,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-11"><p class="boton"><input type="submit" name="enviar_registro" id="enviar_registro"
+    <div class="col-md-11"><p class="boton"><input type="submit" name="enviar_registro" class="btn btn-primary" id="enviar_registro"
                                                    value="Login"/></p></div>
 </form>
 

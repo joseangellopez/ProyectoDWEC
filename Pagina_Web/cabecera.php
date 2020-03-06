@@ -1,6 +1,6 @@
 
   <!--ETIQUETA NAV-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <a class="navbar-brand" href="#">HOTEL</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Hoteles</a>
+          <a class="nav-link" href="#">Contacto</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
@@ -21,14 +21,13 @@
 
           $login_logout = "";
           if (!isset($_SESSION['sess_user_name'])) {
-              $login_logout = '<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModallogin">Login</button></li>
-       <li> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalregistro">Registro</button></li>';
+              $login_logout = '<li><button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModallogin">Login</button></li>
+                               <li> <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModalregistro">Registro</button></li>';
           }else {
               $login_logout =  '<li> <a href="logout.php"> <button type="button" class="btn btn-primary">Logout</button></a></li>';
           }
           echo $login_logout
           ?>
-
       </ul>
     </div>
     
@@ -38,7 +37,6 @@
 
 <!-- Ventana modal de login y registro -->
 <div class="modal" id="myModallogin" data-backdrop="static">
-
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
