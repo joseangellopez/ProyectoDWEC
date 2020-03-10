@@ -50,7 +50,7 @@
 
 
                 <?php
-                $sql = "SELECT * from habitacion where  codHabitacion=78;";
+                $sql = "SELECT * from habitacion;";
                 $host = 'localhost';
                 $user = 'root';
                 $pass = '';
@@ -70,7 +70,7 @@
                     description: 'Planta: $row[planta],\\nPrecio por noche: $row[tarifa] euros',
                     start: '$row[Fecha_entrada]',
                     end: '$row[Fecha_salida]'
-                }
+                },
                 
                 
                 ";
