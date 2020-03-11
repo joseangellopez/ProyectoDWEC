@@ -10,7 +10,7 @@ $('#enviar_registro').click(function () {
         var telefono_registro = $('#telefono_registro').val();
 
 
-    if (contrasena_registro == contrasena_registro2 && contrasena_registro.length < 6){
+    if (contrasena_registro == contrasena_registro2 && contrasena_registro.length >= 6){
          $.ajax({
         url: "assets/gets/getregistro.php",
         type: "POST",
@@ -20,7 +20,6 @@ $('#enviar_registro').click(function () {
             alert(data);
             if (data == 'OK') {
                 $('#myModalregistro').hide();
-                //location.reload();
             } else {
                 //alert(data);
                 document.getElementsByClassName("mensaje").text(data);
