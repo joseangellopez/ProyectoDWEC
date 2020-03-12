@@ -10,9 +10,9 @@
                    <input class="form-control" type="text" id="nombre_registro" name="nombre_registro"
                            placeholder="Nombre" required>
                       <input class="form-control" type="text" id="apellidos_registro" name="apellidos_registro"
-                           placeholder="Primer Apellido" required>
-                     <input class="form-control" type="text" id="telefono_registro" name="telefono_registro"
-                           placeholder="Segundo apellido" >
+                           placeholder="Apellidos" required>
+                     <input class="form-control" type="number" id="telefono_registro" name="telefono_registro"
+                           placeholder="telefono" min="1" max="999999999999" >
                 </div>
             </div>
             <div class="col-md-1"></div>
