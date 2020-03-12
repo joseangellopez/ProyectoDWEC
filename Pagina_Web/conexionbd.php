@@ -1,6 +1,7 @@
 <?php
 
 try {
+	$host = "localhost";
     $user = "root";  // usuario con el que se va conectar con MySQL
     $pass = "";  // contraseña del usuario
     $dbname = "hotel";  //nombre de la base de datos
