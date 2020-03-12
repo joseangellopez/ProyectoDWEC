@@ -67,6 +67,7 @@ include 'cabecera.php';
 <!-- FIN CARROUSER HOTEL CAMPO NUEVO-->
     <!--Empieza numero de plantas del hotel-->
 <div class="row">
+<MARQUEE BGCOLOR="#FF7070" WIDTH=100% HEIGHT=20> Última hora: Rebajas del 90% en nuestras Habitaciónes de último piso por "CORONAVIRUS"</MARQUEE>
 
     <div class="card" style="width: 35rem;">
         <div class="card-body">
@@ -86,7 +87,7 @@ include 'cabecera.php';
                 </tr>
                 <tr>
                     <td id="1-2" scope="row"  class="<?php echo $habi[1] ?>">2</td>
-                    <td class="piscina" colspan="4" rowspan="4"></td>
+                    <td class="piscina" colspan="4" rowspan="4"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/e3/e4/73/hotel-la-moraleda-complejo.jpg" width="420" height="250" alt=""></td>
                     <td id="112"  class="<?php echo $habi[11] ?>">12</td>
 
                 </tr>
