@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
+<?php require_once "vistas/cabecera.php";  ?>
+
 	<?php require_once "scripts.php";  ?>
-</head>
-<body>
+
 
 <!--TABLA DE CLIENTE-->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="card text-left">
-					<div class="card-header">
-						HOTEL
+					<div class="card-header text-center">
+						ZONA DE CLIENTES
 					</div>
 					<div class="card-body">
 						<span class="btn btn-primary" data-toggle="modal" data-target="#agregarnuevosdatosmodal">
@@ -87,9 +84,7 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
-
+	<?php require_once "vistas/pie.php";?>
 
 <script type="text/javascript">
 	$(document).ready(function(){

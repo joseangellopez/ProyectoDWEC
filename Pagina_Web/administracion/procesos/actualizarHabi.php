@@ -3,7 +3,8 @@
 	require_once "../clases/crud.php";
 	$obj= new crud();
 
-	$datos=array(
+	$datosHabi=array(
+		$_POST['codHabitacion'],
 		$_POST['tipo'],
 		$_POST['capacidad'],
 		$_POST['planta'],
@@ -12,7 +13,7 @@
 		$_POST['fEntrada'],
         $_POST['fSalida']);
         
-	echo $obj->actualizarHabi($datos);
+	echo $obj->actualizarHabi($datosHabi);
 	
 
  ?>
