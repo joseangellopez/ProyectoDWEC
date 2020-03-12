@@ -16,7 +16,7 @@
           $sql->execute();
 
 
-            $sql2 = $db->prepare("INSERT INTO cliente(DNI,nombre,apellido1,apellido2) VALUES (:dni_registro,:nombre_registro,:apellidos_registro,:telefono_registro);");
+            $sql2 = $db->prepare("INSERT INTO cliente(DNI,nombre,apellidos,telefono) VALUES (:dni_registro,:nombre_registro,:apellidos_registro,:telefono_registro);");
             $sql2->bindParam('dni_registro', $dni_registro, PDO::PARAM_STR);
  $sql2->bindParam('nombre_registro', $nombre_registro, PDO::PARAM_STR);
             $sql2->bindParam('apellidos_registro', $apellidos_registro, PDO::PARAM_STR);
