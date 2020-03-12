@@ -239,13 +239,19 @@ include 'cabecera.php';
             <button id="4" class="btn btn-outline-primary">Planta 4</button>
         </div>
     </div>
+
+
+
     <!--FIN numero de plantas del hotel-->
+
 
  <div class="card" style="width: 35rem;">
     <div class="card-body">
-    <p>Fecha de entrada:<input id="date" type="date" value="2020-15-02"></p>
-    <p>Fecha de  Salida:  <input id="date" type="date" value="2020-15-02"></p>
-        </div>
+    <?php 
+include "calendario.php";
+    
+    ?>
+<div><div id="calendar"></div>        </div>
     </div>
 </div>
     </div>

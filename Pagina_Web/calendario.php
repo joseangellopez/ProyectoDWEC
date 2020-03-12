@@ -50,11 +50,9 @@
 
 
                 <?php
+                include "conexionbd.php";
                 $sql = "SELECT * from habitacion;";
-                $host = 'localhost';
-                $user = 'root';
-                $pass = '';
-                $dbname = 'hotel';
+                
                 $db = mysqli_connect($host, $user, $pass, $dbname);
 
                 $result = mysqli_query($db, $sql);
