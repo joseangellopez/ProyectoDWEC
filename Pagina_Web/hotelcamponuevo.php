@@ -11,13 +11,12 @@
     $consulta_color = "select * from habitacion;";
 
     foreach ($db->query($consulta_color) as $fila) {
-        $prueba = $fila['codHabitacion'];
-        $prueba2 = $fila['reservada'];
-            if ($habi[$contador] ==  $prueba) {
-
-                if ($prueba2 == "SI") {
+        $codigo = $fila['codHabitacion'];
+        $reserva = $fila['reservada'];
+            if ($habi[$contador] ==  $codigo) {
+                if ($reserva == "SI") {
                     $habi[$contador] = "rojo";
-                } else if ($prueba2 == "NO") {
+                } else if ($reserva == "NO") {
 
                     $habi[$contador] = "verde";
                 }
@@ -249,6 +248,7 @@ include 'cabecera.php';
         </div>
     </div>
 </div>
+    </div>
     <?php
     include 'pie.php';
     ?>

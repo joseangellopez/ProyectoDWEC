@@ -5,15 +5,14 @@
         <div class="form-row">
             <div class="col-md-5">
                 <div class="form-group">
-                    <input class="form-control" type="email" id="usuario_registro" name="usuario_registro"
-                           placeholder="Correo electronico" required>
+                   
                     
                    <input class="form-control" type="text" id="nombre_registro" name="nombre_registro"
                            placeholder="Nombre" required>
                       <input class="form-control" type="text" id="apellidos_registro" name="apellidos_registro"
-                           placeholder="Apellidos" required>
+                           placeholder="Primer Apellido" required>
                      <input class="form-control" type="text" id="telefono_registro" name="telefono_registro"
-                           placeholder="telefono" required>
+                           placeholder="Segundo apellido" >
                 </div>
             </div>
             <div class="col-md-1"></div>
@@ -32,9 +31,13 @@
                 </div>
             </div>
         </div>
+        <div class="form-group">
+                    <input class="form-control" type="email" id="usuario_registro" name="usuario_registro"
+                           placeholder="Correo electronico" required>
+        </div>
     </div>
     <div class="col-md-11"><p class="boton"><input type="submit" name="enviar_registro" class="btn btn-primary" id="enviar_registro"
-                                                   value="Login"/></p></div>
+                                                   value="Registro"/></p></div>
 </form>
 
 <span class="text-danger"><?php echo @$msg ?></span>

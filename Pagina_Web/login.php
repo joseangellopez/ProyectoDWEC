@@ -2,7 +2,7 @@
 <!-- div class="modal-body" -->
 <div>
     <input class="form-control" type="text" id="username"  autocomplete="off" required
-           placeholder="Usuario">
+           placeholder="Correo electronico">
 <br>
     <input class="form-control" type="password" id="password" placeholder="Costraseña"
            autocomplete="off" required>
