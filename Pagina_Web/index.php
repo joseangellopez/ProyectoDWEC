@@ -27,15 +27,15 @@ include 'cabecera.php';
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://static.vecteezy.com/system/resources/previews/000/358/274/non_2x/vector-hotel-online-booking-banner.jpg" class="d-block w-100" height="500">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/358/274/non_2x/vector-hotel-online-booking-banner.jpg" class="d-block w-100" height="300">
        
       </div>
       <div class="carousel-item">
-        <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/221/221478894.jpg" class="d-block w-100" height="500">
+        <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/221/221478894.jpg" class="d-block w-100" height="300">
       
       </div>
       <div class="carousel-item">
-        <img src="https://images.squarespace-cdn.com/content/v1/5808ca8b2e69cff7baf46b68/1490058441933-BVAH59USJ4XQ4IFLJP8Q/ke17ZwdGBToddI8pDm48kG1VonStXBMhI7VIcWhi9y1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKhY-fNmZN6-qcnAg_zlUgRugyKzCpaJ1F813YUpvg0cKMshLAGzx4R3EDFOm1kBS/banner-hotelrooms-eq.jpg" class="d-block w-100" height="500">
+        <img src="https://images.squarespace-cdn.com/content/v1/5808ca8b2e69cff7baf46b68/1490058441933-BVAH59USJ4XQ4IFLJP8Q/ke17ZwdGBToddI8pDm48kG1VonStXBMhI7VIcWhi9y1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKhY-fNmZN6-qcnAg_zlUgRugyKzCpaJ1F813YUpvg0cKMshLAGzx4R3EDFOm1kBS/banner-hotelrooms-eq.jpg" class="d-block w-100" height="300">
         
       </div>
     </div>
