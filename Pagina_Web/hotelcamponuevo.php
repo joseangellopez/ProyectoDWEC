@@ -254,9 +254,14 @@ include "calendario.php";
 <div><div id="calendar"></div>        </div>
     </div>
 </div>
-<div id="c_e25003a85daad147eaca6985b6700008" class="ancho"></div><script type="text/javascript" src="https://www.eltiempo.es/widget/widget_loader/e25003a85daad147eaca6985b6700008"></script>
-    </div>
-</div>    
+
+</div>   
+
+<div id="c_e25003a85daad147eaca6985b6700008" class="largo"></div><script type="text/javascript" src="https://www.eltiempo.es/widget/widget_loader/e25003a85daad147eaca6985b6700008"></script>
+</div> 
+<MARQUEE BGCOLOR="#FF7070" WIDTH=100% HEIGHT=20> Última hora: Rebajas del 90% en nuestras Habitaciónes de último piso por "CORONAVIRUS"</MARQUEE>
+
+
     <?php
     include 'pie.php';
     ?>
