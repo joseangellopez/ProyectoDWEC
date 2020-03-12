@@ -254,7 +254,9 @@ include "calendario.php";
 <div><div id="calendar"></div>        </div>
     </div>
 </div>
+<div id="c_e25003a85daad147eaca6985b6700008" class="ancho"></div><script type="text/javascript" src="https://www.eltiempo.es/widget/widget_loader/e25003a85daad147eaca6985b6700008"></script>
     </div>
+</div>    
     <?php
     include 'pie.php';
     ?>
