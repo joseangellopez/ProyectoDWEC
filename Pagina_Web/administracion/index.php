@@ -164,3 +164,30 @@
 		});
 	}
 </script>
+
+
+<script>
+//VALIDAMOS LOS CAMPOS PARA QUE NO INTRODUZCAN LETRAS O CARACTERES EXTRAÑOS
+$('#dni').on('input', function (e) {
+    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
+        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
+    }
+});
+$('#nombre').on('input', function (e) {
+    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
+        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
+    }
+});
+$('#apellidos').on('input', function (e) {
+    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
+        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
+    }
+});
+$('#telefono').on('input', function (e) {
+    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
+        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
+    }
+});
+
+
+</script>
