@@ -238,6 +238,10 @@ include 'cabecera.php';
             <button id="2" class="btn btn-outline-primary">Planta 2</button>
             <button id="3" class="btn btn-outline-primary">Planta 3</button>
             <button id="4" class="btn btn-outline-primary">Planta 4</button>
+
+            <a href="reserva/" target="_blank" class="btn btn-success" >Reservar</a>
+
+
         </div>
     </div>
 
