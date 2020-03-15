@@ -1,195 +1,93 @@
-<?php require_once "vistas/cabecera.php";  ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+include 'links.php';
+?>
 
-	<?php require_once "scripts.php";  ?>
+    <title>Aplicación Hotelera</title>
+</head>
+<body>
 
+<?php
+include 'cabecera.php';
+?>
 
-<!--TABLA DE CLIENTE-->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="card text-left">
-					<div class="card-header text-center">
-						ZONA DE CLIENTES
-					</div>
-					<div class="card-body">
-						<span class="btn btn-primary" data-toggle="modal" data-target="#agregarnuevosdatosmodal">
-							Agregar nuevo <span class="fa fa-plus-circle"></span>
-						</span>
-						<hr>
-						<div id="tablaDatatable"></div>
-					</div>
-					<div class="card-footer text-muted">
-						Administración
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="container">
 
-	<!-- Modal -->
-	<div class="modal fade" id="agregarnuevosdatosmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Agrega nuevo Cliente</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form id="frmnuevo">
-						<label>Dni</label>
-						<input type="text" class="form-control input-sm" id="dni" name="dni">
-						<label>Nombre</label>
-						<input type="text" class="form-control input-sm" id="nombre" name="nombre">
-						<label>Apellidos</label>
-						<input type="text" class="form-control input-sm" id="apellidos" name="apellidos">
-						<label>Teléfono</label>
-						<input type="number" class="form-control input-sm" id="telefono" name="telefono">
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					<button type="button" id="btnAgregarnuevo" class="btn btn-primary">Agregar nuevo</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Modal -->
-	<div class="modal fade" id="modalEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Actualizar Cliente</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form id="frmnuevoU">
-						<label>Dni</label>
-						<input type="text" class="form-control input-sm" id="dniU" name="dniU">
-						<label>Nombre</label>
-						<input type="text" class="form-control input-sm" id="nombreU" name="nombreU">
-						<label>Apellidos</label>
-						<input type="text" class="form-control input-sm" id="apellidosU" name="apellidosU">
-						<label>Teléfono</label>
-						<input type="number" class="form-control input-sm" id="telefonoU" name="telefonoU">
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn btn-warning" id="btnActualizar">Actualizar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<?php require_once "vistas/pie.php";?>
+<br>
+<!--CARROUSER -->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/358/274/non_2x/vector-hotel-online-booking-banner.jpg" class="d-block w-100" height="300">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/221/221478894.jpg" class="d-block w-100" height="300">
+      
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.squarespace-cdn.com/content/v1/5808ca8b2e69cff7baf46b68/1490058441933-BVAH59USJ4XQ4IFLJP8Q/ke17ZwdGBToddI8pDm48kG1VonStXBMhI7VIcWhi9y1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKhY-fNmZN6-qcnAg_zlUgRugyKzCpaJ1F813YUpvg0cKMshLAGzx4R3EDFOm1kBS/banner-hotelrooms-eq.jpg" class="d-block w-100" height="300">
+        
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+<!-- FIN CARROUSER -->
 
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#btnAgregarnuevo').click(function(){
-			datos=$('#frmnuevo').serialize();
-			$.ajax({
-				type:"POST",
-				data:datos,
-				url:"procesos/agregar.php",
-				success:function(r){
-					if(r==1){
-						$('#frmnuevo')[0].reset();
-						$('#tablaDatatable').load('tabla.php');
-						alertify.success("agregado con exito :D");
-					}else{
-						alertify.error("Fallo al agregar :(");
-					}
-				}
-			});
-		});
-		
-		$('#btnActualizar').click(function(){
-			datos=$('#frmnuevoU').serialize();
-			$.ajax({
-				type:"POST",
-				data:datos,
-				url:"procesos/actualizar.php",
-				success:function(r){
-					if(r==1){
-						$('#tablaDatatable').load('tabla.php');
-						alertify.success("Actualizado con exito :D");
-					}else{
-						alertify.error("Fallo al actualizar :(");
-					}
-				}
-			});
-		});
-	});
-</script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#tablaDatatable').load('tabla.php');
-	});
-</script>
-<script type="text/javascript">
-	function agregaFrmActualizar(codCliente){
-		$.ajax({
-			type:"POST",
-			data:"codCliente=" + codCliente,
-			url:"procesos/obtenDatos.php",
-			success:function(r){
-				datos=jQuery.parseJSON(r);
-				$('#codCliente').val(datos['codCliente']);
+<!--INICIO TARJETAS HOTEL-->
+<br>
+<h1 class="display-4 text-center">HOTELES DISPONIBLES</h1>
+<br>
+<div class="row justify-content-center m-3 ">
+    <div class="card p-3" style="width: 18rem;">
+        <img src="https://www.ahstatic.com/photos/1867_ho_00_p_1024x768.jpg" class="card-img-top" alt="hotel campo nuevo">
+        <div class="card-body">
+          <h5 class="card-title text-center">HOTEX</h5>
+            <p class="card-text text-center">HOTEX es el lugar perfecto si estas cansado de los mismos sitio de siempre, cuenta con una gran intimidad, muchas actividades y una gran piscina.</p> <p class="card-text text-center">VEN Y DESCRÚBRETE A TI MISMO</p>
+          <a href="hotelcamponuevo.php" class="btn btn-outline-primary btn-lg btn-block">Disponible</a>
+        </div>
+      </div>
+      <div class="card p-3" style="width: 18rem;">
+        <img src="https://ihg.scene7.com/is/image/ihg/avid-hotels-perry-5980510467-4x3" class="card-img-top" alt="hotel los piripis">
+        <div class="card-body">
+          <h5 class="card-title text-center">Los piripis</h5>
+          <p class="card-text text-center">¿Cansado que tu hotel no tenga todos los servicios?</p>
+          <p class="card-text text-center">¿Cansado de esperar largos periodos de tiempo para entrar en tu habitación?</p>
+          <p class="card-text text-center">No busques mas, este es el hotel perfecto para ti</p>
+          <a href="#" class="btn btn-outline-danger btn-lg btn-block">No disponible</a>
+        </div>
+      </div>
+      <div class="card p-3" style="width: 18rem;">
+        <img src="https://y.cdrst.com/foto/hotel-sf/e65d/hotelgallery/hotel-tryp-lisboa-caparica-mar-exterior-6bd965b.jpg" class="card-img-top" alt="hotel la hora del angelus">
+        <div class="card-body">
+          <h5 class="card-title text-center">ANGELUS</h5>
+          <p class="card-text text-center">En este hotel podrás escuchar la llamada de Dios a todas horas del día y en todos los lugares</p>
+          <p class="card-text text-center">Nuestro objetivo es que te sientes como en la sagrada casa de Dios</p>
+          <p class="card-text text-center">SIEMPRE DISPONIBLE</p>
+          <a href="#" class="btn btn-outline-danger btn-lg btn-block">No disponible</a>
+        </div>
+      </div>
+</div>
+</div>
+<!--FIN TARJETAS HOTEL-->
 
-				$('#dniU').val(datos['DNI']);
-				$('#nombreU').val(datos['nombre']);
-				$('#apellidosU').val(datos['apellidos']);
-				$('#telefonoU').val(datos['telefono']);
-			}
-		});
-	}
-	function eliminarDatos(codCliente){
-		alertify.confirm('Eliminar Cliente', '¿Seguro de eliminar este Cliente:(?', function(){ 
-			$.ajax({
-				type:"POST",
-				data:"codCliente=" + codCliente,
-				url:"procesos/eliminar.php",
-				success:function(r){
-					if(r==1){
-						$('#tablaDatatable').load('tabla.php');
-						alertify.success("Eliminado con exito !");
-					}else{
-						alertify.error("No se pudo eliminar...");
-					}
-				}
-			});
-		}
-		, function(){
-		});
-	}
-</script>
+<?php 
+include 'pie.php';
+?>
 
-
-<script>
-//VALIDAMOS LOS CAMPOS PARA QUE NO INTRODUZCAN LETRAS O CARACTERES EXTRAÑOS
-$('#dni').on('input', function (e) {
-    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
-        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
-    }
-});
-$('#nombre').on('input', function (e) {
-    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
-        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
-    }
-});
-$('#apellidos').on('input', function (e) {
-    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
-        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
-    }
-});
-$('#telefono').on('input', function (e) {
-    if (!/^[ a-z0-9áéíóúüñ]*$/i.test(this.value)) {
-        this.value = this.value.replace(/[^ a-z0-9áéíóúüñ]+/ig,"");
-    }
-});
-
-
-</script>
