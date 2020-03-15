@@ -56,8 +56,11 @@ $result=mysqli_query($conexion,$sql);
 			}
 			?>
 		</tbody>
+		<input type="button" class="btn btn-primary" value="Imprime esta página" onclick="window.print()">
+
 	</table>
 </div>
+
 
 <script type="text/javascript">
 	$(document).ready(function() {
