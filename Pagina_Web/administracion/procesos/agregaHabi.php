@@ -13,7 +13,7 @@
 		$_POST['fEntrada'],
 		$_POST['fSalida']
 	);
-	echo $obj->agregarHabi($datos);
+	echo $obj->agregaHabi($datos);
 	
 
  ?>

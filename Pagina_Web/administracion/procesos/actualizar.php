@@ -4,10 +4,11 @@
 	$obj= new crud();
 
 	$datos=array(
-		$_POST['dni'],
-		$_POST['nombre'],
-		$_POST['apellidos'],
-		$_POST['telefono']
+		$_POST['codCliente'],
+		$_POST['dniU'],
+		$_POST['nombreU'],
+		$_POST['apellidosU'],
+		$_POST['telefonoU']
 				);
 
 	echo $obj->actualizar($datos);
