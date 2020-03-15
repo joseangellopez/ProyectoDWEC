@@ -24,7 +24,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Agrega nuevo Cliente</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Agrega nueva Habitación</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -56,26 +56,37 @@
 			</div>
 		</div>
 	</div>
-	<!-- Modal -->
+
+
+
+
+	<!-- Modal ACTUALIZAR-->
 	<div class="modal fade" id="modalEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Actualizar Cliente</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Actualizar Habitación</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
 					<form id="frmnuevoU">
-						<label>Dni</label>
-						<input type="text" class="form-control input-sm" id="dni" name="dni">
-						<label>Nombre</label>
-						<input type="text" class="form-control input-sm" id="nombre" name="nombre">
-						<label>Apellidos</label>
-						<input type="text" class="form-control input-sm" id="apellidos" name="apellidos">
-						<label>Teléfono</label>
-						<input type="number" class="form-control input-sm" id="telefono" name="telefono">
+				
+						<label>Tipo</label>
+						<input type="text" class="form-control input-sm" id="tipoU" name="tipoU">
+						<label>Capacidad</label>
+						<input type="text" class="form-control input-sm" id="capacidadU" name="capacidadU">
+						<label>Planta</label>
+						<input type="number" class="form-control input-sm" id="plantaU" name="plantaU">
+						<label>Precio</label>
+						<input type="number" class="form-control input-sm" id="tarifaU" name="tarifaU">
+                        <label>Reservada</label>
+						<input type="text" class="form-control input-sm" id="reservadaU" name="reservadaU">
+                        <label>Fecha Entrada</label>
+						<input type="date" class="form-control input-sm" id="fEntradaU" name="fEntradaU">
+                        <label>Fecha Salida</label>
+						<input type="date" class="form-control input-sm" id="fSalidaU" name="fSalidaU">
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -85,9 +96,11 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
 	<?php require_once "vistas/pie.php";  ?>
-
-
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#btnAgregarnuevo').click(function(){
@@ -131,18 +144,22 @@
 	});
 </script>
 <script type="text/javascript">
-	function agregaFrmActualizar(codCliente){
+	function agregaFrmActualizar(codHabitacion){
 		$.ajax({
 			type:"POST",
-			data:"codCliente=" + codCliente,
-			url:"procesos/obtenDatos.php",
+			data:"codHabitacion=" + codHabitacion,
+			url:"procesos/obtenHabitacion.php",
 			success:function(r){
 				datos=jQuery.parseJSON(r);
-				$('#codCliente').val(datos['codCliente']);
-				$('#dni').val(datos['dni']);
-				$('#nombre').val(datos['nombre']);
-				$('#apellidos').val(datos['apellidos']);
-				$('#telefono').val(datos['telefono']);
+				$('#codHabitacion').val(datos['codHabitacion']);
+				$('#tipoU').val(datos['tipo']);
+				$('#capacidadU').val(datos['capacidad']);
+				$('#plantaU').val(datos['planta']);
+				$('#tarifaU').val(datos['tarifa']);
+				$('#reservadaU').val(datos['reservada']);
+				$('#fEntradaU').val(datos['Fecha_entrada']);
+				$('#fSalidaU').val(datos['Fecha_salida']);
+
 			}
 		});
 	}

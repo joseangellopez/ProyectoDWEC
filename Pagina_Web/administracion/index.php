@@ -68,13 +68,13 @@
 				<div class="modal-body">
 					<form id="frmnuevoU">
 						<label>Dni</label>
-						<input type="text" class="form-control input-sm" id="dni" name="dni">
+						<input type="text" class="form-control input-sm" id="dniU" name="dniU">
 						<label>Nombre</label>
-						<input type="text" class="form-control input-sm" id="nombre" name="nombre">
+						<input type="text" class="form-control input-sm" id="nombreU" name="nombreU">
 						<label>Apellidos</label>
-						<input type="text" class="form-control input-sm" id="apellidos" name="apellidos">
+						<input type="text" class="form-control input-sm" id="apellidosU" name="apellidosU">
 						<label>Teléfono</label>
-						<input type="number" class="form-control input-sm" id="telefono" name="telefono">
+						<input type="number" class="form-control input-sm" id="telefonoU" name="telefonoU">
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -137,10 +137,12 @@
 			url:"procesos/obtenDatos.php",
 			success:function(r){
 				datos=jQuery.parseJSON(r);
-				$('#dni').val(datos['DNI']);
-				$('#nombre').val(datos['nombre']);
-				$('#apellidos').val(datos['apellidos']);
-				$('#telefono').val(datos['telefono']);
+				$('#codCliente').val(datos['codCliente']);
+
+				$('#dniU').val(datos['DNI']);
+				$('#nombreU').val(datos['nombre']);
+				$('#apellidosU').val(datos['apellidos']);
+				$('#telefonoU').val(datos['telefono']);
 			}
 		});
 	}
